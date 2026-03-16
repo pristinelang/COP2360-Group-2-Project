@@ -1,0 +1,15 @@
+/Users/christinelang/Documents/COP2360/DictionaryProject/bin/Debug/net10.0/DictionaryProject
+/Users/christinelang/Documents/COP2360/DictionaryProject/bin/Debug/net10.0/DictionaryProject.deps.json
+/Users/christinelang/Documents/COP2360/DictionaryProject/bin/Debug/net10.0/DictionaryProject.runtimeconfig.json
+/Users/christinelang/Documents/COP2360/DictionaryProject/bin/Debug/net10.0/DictionaryProject.dll
+/Users/christinelang/Documents/COP2360/DictionaryProject/bin/Debug/net10.0/DictionaryProject.pdb
+/Users/christinelang/Documents/COP2360/DictionaryProject/obj/Debug/net10.0/DictionaryProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christinelang/Documents/COP2360/DictionaryProject/obj/Debug/net10.0/DictionaryProject.AssemblyInfoInputs.cache
+/Users/christinelang/Documents/COP2360/DictionaryProject/obj/Debug/net10.0/DictionaryProject.AssemblyInfo.cs
+/Users/christinelang/Documents/COP2360/DictionaryProject/obj/Debug/net10.0/DictionaryProject.csproj.CoreCompileInputs.cache
+/Users/christinelang/Documents/COP2360/DictionaryProject/obj/Debug/net10.0/DictionaryProject.sourcelink.json
+/Users/christinelang/Documents/COP2360/DictionaryProject/obj/Debug/net10.0/DictionaryProject.dll
+/Users/christinelang/Documents/COP2360/DictionaryProject/obj/Debug/net10.0/refint/DictionaryProject.dll
+/Users/christinelang/Documents/COP2360/DictionaryProject/obj/Debug/net10.0/DictionaryProject.pdb
+/Users/christinelang/Documents/COP2360/DictionaryProject/obj/Debug/net10.0/DictionaryProject.genruntimeconfig.cache
+/Users/christinelang/Documents/COP2360/DictionaryProject/obj/Debug/net10.0/ref/DictionaryProject.dll
