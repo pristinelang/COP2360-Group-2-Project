@@ -88,10 +88,29 @@ static void AddNewKey(Dictionary<string, string> dict)
 // ─── Person 4 ───────────────────────────────────────────────
 static void AppendToKey(Dictionary<string, string> dict)
 {
-    // Person 4 writes code here
-}
+    Console.Write("Enter the key you want to update: ");
+    string key = Console.ReadLine();
 
+    if (dict.ContainsKey(key))
+    {
+        Console.Write("Enter the value to append: ");
+        string newValue = Console.ReadLine();
+
+        dict[key] = dict[key] + ", " + newValue;
+        Console.WriteLine("Value added successfully.");
+    }
+    else
+    {
+        Console.WriteLine("Key not found.");
+    }
+}
 static void SortKeys(Dictionary<string, string> dict)
 {
-    // Person 4 writes code here
+    var sortedKeys = dict.Keys.OrderBy(k => k);
+
+    Console.WriteLine("Sorted keys:");
+    foreach (var key in sortedKeys)
+    {
+        Console.WriteLine(key + ": " + dict[key]);
+    }
 }
