@@ -64,7 +64,81 @@ do
 // ─── Person 2 ───────────────────────────────────────────────
 static void PopulateDictionary(Dictionary<string, string> dict)
 {
-    // Person 2 writes code here
+  // ─── Person 2 ───────────────────────────────────────────────
+static void PopulateDictionary(Dictionary<string, string> dict)
+{
+    // Adding a mix of real and made-up restaurants
+    string[,] restaurants = {
+        { "The Sizzling Skillet", "American Comfort Food" },
+        { "Le Petit Bistro", "French" },
+        { "Mama Mia's Kitchen", "Italian" },
+        { "Dragon's Breath", "Szechuan" },
+        { "Taco Temple", "Mexican Street Food" },
+        { "The Golden Gyro", "Greek" },
+        { "Cyber Cafe 2077", "Futuristic Fusion" },
+        { "Ocean's Bounty", "Seafood" }
+    };
+
+    for (int i = 0; i < restaurants.GetLength(0); i++)
+    {
+        string name = restaurants[i, 0];
+        string cuisine = restaurants[i, 1];
+
+        if (!dict.ContainsKey(name))
+        {
+            dict.Add(name, cuisine);
+        }
+    }
+
+    Console.WriteLine("Dictionary successfully populated with local restaurants!");
+}
+
+static void DisplayDictionary(Dictionary<string, string> dict)
+{
+    Console.WriteLine("\n--- Current Restaurant List ---");
+    Console.WriteLine($"{"Restaurant Name",-25} | {"Cuisine Type",-20}");
+    Console.WriteLine(new string('-', 50));
+
+    foreach (var entry in dict)
+    {
+        Console.WriteLine($"{entry.Key,-25} | {entry.Value,-20}");
+    }
+}
+
+
+// ─── Person 3 ───────────────────────────────────────────────
+static void RemoveKey(Dictionary<string, string> dict)
+{
+    Console.Write("Enter the name of the restaurant to remove: ");
+    string key = Console.ReadLine();
+
+    if (dict.Remove(key))
+    {
+        Console.WriteLine($"{key} has been removed.");
+    }
+    else
+    {
+        Console.WriteLine("Restaurant not found.");
+    }
+}
+
+static void AddNewKey(Dictionary<string, string> dict)
+{
+    Console.Write("Enter new restaurant name: ");
+    string name = Console.ReadLine();
+    
+    if (dict.ContainsKey(name))
+    {
+        Console.WriteLine("That restaurant already exists.");
+        return;
+    }
+
+    Console.Write("Enter cuisine type: ");
+    string cuisine = Console.ReadLine();
+
+    dict.Add(name, cuisine);
+    Console.WriteLine("New restaurant added successfully.");
+}
 }
 
 static void DisplayDictionary(Dictionary<string, string> dict)
