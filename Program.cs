@@ -61,13 +61,8 @@ do
 } while (choice != 0);
 
 
-// ─── Person 2 ───────────────────────────────────────────────
 static void PopulateDictionary(Dictionary<string, string> dict)
 {
-  // ─── Person 2 ───────────────────────────────────────────────
-static void PopulateDictionary(Dictionary<string, string> dict)
-{
-    // Adding a mix of real and made-up restaurants
     string[,] restaurants = {
         { "The Sizzling Skillet", "American Comfort Food" },
         { "Le Petit Bistro", "French" },
@@ -105,12 +100,10 @@ static void DisplayDictionary(Dictionary<string, string> dict)
     }
 }
 
-
-// ─── Person 3 ───────────────────────────────────────────────
 static void RemoveKey(Dictionary<string, string> dict)
 {
     Console.Write("Enter the name of the restaurant to remove: ");
-    string key = Console.ReadLine();
+    string key = Console.ReadLine() ?? "";
 
     if (dict.Remove(key))
     {
@@ -125,8 +118,8 @@ static void RemoveKey(Dictionary<string, string> dict)
 static void AddNewKey(Dictionary<string, string> dict)
 {
     Console.Write("Enter new restaurant name: ");
-    string name = Console.ReadLine();
-    
+    string name = Console.ReadLine() ?? "";
+
     if (dict.ContainsKey(name))
     {
         Console.WriteLine("That restaurant already exists.");
@@ -134,41 +127,21 @@ static void AddNewKey(Dictionary<string, string> dict)
     }
 
     Console.Write("Enter cuisine type: ");
-    string cuisine = Console.ReadLine();
+    string cuisine = Console.ReadLine() ?? "";
 
     dict.Add(name, cuisine);
     Console.WriteLine("New restaurant added successfully.");
 }
-}
 
-static void DisplayDictionary(Dictionary<string, string> dict)
-{
-    // Person 2 writes code here
-}
-
-
-// ─── Person 3 ───────────────────────────────────────────────
-static void RemoveKey(Dictionary<string, string> dict)
-{
-    // Person 3 writes code here
-}
-
-static void AddNewKey(Dictionary<string, string> dict)
-{
-    // Person 3 writes code here
-}
-
-
-// ─── Person 4 ───────────────────────────────────────────────
 static void AppendToKey(Dictionary<string, string> dict)
 {
     Console.Write("Enter the key you want to update: ");
-    string key = Console.ReadLine();
+    string key = Console.ReadLine() ?? "";
 
     if (dict.ContainsKey(key))
     {
         Console.Write("Enter the value to append: ");
-        string newValue = Console.ReadLine();
+        string newValue = Console.ReadLine() ?? "";
 
         dict[key] = dict[key] + ", " + newValue;
         Console.WriteLine("Value added successfully.");
@@ -178,11 +151,12 @@ static void AppendToKey(Dictionary<string, string> dict)
         Console.WriteLine("Key not found.");
     }
 }
+
 static void SortKeys(Dictionary<string, string> dict)
 {
     var sortedKeys = dict.Keys.OrderBy(k => k);
 
-    Console.WriteLine("Sorted keys:");
+    Console.WriteLine("\nSorted keys:");
     foreach (var key in sortedKeys)
     {
         Console.WriteLine(key + ": " + dict[key]);
