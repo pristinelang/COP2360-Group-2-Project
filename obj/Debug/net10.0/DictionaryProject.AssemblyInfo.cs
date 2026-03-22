@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DictionaryProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c409a7af93a6d3ab784a03e2c621fe20813a7570")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3598a3e306ad524c0daada187e6582cf00e72878")]
 [assembly: System.Reflection.AssemblyProductAttribute("DictionaryProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DictionaryProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
